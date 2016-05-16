@@ -1,64 +1,42 @@
-body {
-/*  padding-top: 40px;*/
-  padding-bottom: 40px;
-  position: relative;
-}
-
-body::before {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position:absolute; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-
-.bgimage{
+.bgimage {
     padding-top: 200px;
-    background-image:url(../images/background.png);
-    background-size:cover;   
+    background-image: url(../images/background.png);
+    background-size: cover;
 }
 
-.title{
+.title {
     position: absolute;
     background-color: darkgray;
     background-size: cover;
 }
 
 .pic {
-  border: 10px solid #fff;  
-  float: left;
-  height: 530px;
-  width: 360px;
-  margin: 20px;
-  overflow: hidden;
-  
-  -webkit-box-shadow: 5px 5px 5px #111;
-          box-shadow: 5px 5px 5px #111;  
+    border: 10px solid #fff;
+    float: left;
+    height: 530px;
+    width: 360px;
+    margin: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 5px #111;
+    box-shadow: 5px 5px 5px #111;
 }
+
 .grow img {
-  height: auto;
-  width: 360px;
- 
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+    height: auto;
+    width: 360px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
- 
+
 .grow img:hover {
-  width: 400px;
-  height: auto;
+    width: 400px;
+    height: auto;
 }
+
+
 /*
 .thumbnail {
   display: grid;
@@ -75,87 +53,151 @@ body::before {
 */
 
 .hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
 }
 
 .hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 330px;
-  left: 0;
-/*  background-color: rgba(75,75,75,0.7);*/
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 330px;
+    left: 0;
+    /*  background-color: rgba(75,75,75,0.7);*/
+    -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
 }
 
 .hovereffect:hover .overlay {
-/*  background-color: rgba(48, 152, 157, 0.4);*/
-    background-color: rgba(75,75,75,0.7);
-    
+    /*  background-color: rgba(48, 152, 157, 0.4);*/
+    background-color: rgba(75, 75, 75, 0.7);
 }
 
 .hovereffect img {
-  display: block;
-  position: relative;
+    display: block;
+    position: relative;
 }
 
 .hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-/*  text-align: center;*/
-  position: relative;
-  font-size: 30px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(45px);
-  -ms-transform: translateY(45px);
-  transform: translateY(45px);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+    text-transform: uppercase;
+    color: #fff;
+    /*  text-align: center;*/
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
 }
 
 .hovereffect:hover h2 {
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
 }
 
 .hovereffect a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  text-transform: uppercase;
-  color: #fff;
-/*  border: 1px solid #fff;*/
-  background-color: transparent;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  font-weight: normal;
-  margin: -52px 0 0 0;
-  padding: 62px 151px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    /*  border: 1px solid #fff;*/
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    font-weight: normal;
+    margin: -52px 0 0 0;
+    padding: 62px 151px;
 }
 
 .hovereffect:hover a.info {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 .hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+
+/*About us*/
+
+.aboutUSbox {
+    background-color: azure;
+    background-size: cover;
+    background-image: url(../images/AboutUs.jpg)
+}
+
+.aboutus_img {
+    height: 512px;
+    width: auto;
+    opacity: 0.8;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.aboutus_img h2 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.aboutus_img h3 {
+    background-color: ghostwhite;
+    color: darkslategrey;
+    margin: 0;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    width: 90%;
+    padding: 4px;
+    opacity: 0.99;
+}
+
+.aboutus_img input.serviceBtn {
+    position: absolute;
+    margin: 0;
+    left: 300px;
+    top: 250px;
+    width: 20%;
+    padding: 10px;
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+.aboutus_img input.teamBtn {
+    position: absolute;
+    margin: 0;
+    left: 600px;
+    top: 250px;
+    width: 20%;
+    padding: 10px;
+    color: dodgerblue;
+    font-size: 20px;
 }
