@@ -141,6 +141,47 @@
 /*About us*/
 
 .aboutUSbox {
+    background-image: url(../images/AboutUs.jpg);
+    background-size: cover;
+}
+
+.panelBox{
+    width: 70%;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.panelTitle{
+    color:darkcyan;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.panelBody{
+    font-size: 15px;
+}
+
+.btnStyle{
+     background-color:darksalmon;
+     color:aliceblue;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 20px;s
+}
+
+.btnStyle:hover {
+     background-color:coral;
+     color:aliceblue;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 20px;s
+}
+
+/*.aboutUSbox {
     background-color: azure;
     background-size: cover;
     background-image: url(../images/AboutUs.jpg)
@@ -200,4 +241,4 @@
     padding: 10px;
     color: dodgerblue;
     font-size: 20px;
-}
+}*/
